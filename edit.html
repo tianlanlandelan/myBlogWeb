@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/wangEditor.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.js"></script>
+    <title>edit</title>
+</head>
+<body>
+    <input id = "title">
+    <div id = "editor">
+
+    </div>
+    <button id = "insertArticle" @click="insert()">
+        提交
+    </button>
+    <script>        
+        var E = window.wangEditor;
+        var editor = new E("#editor");
+        editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;//debug模式
+        editor.create();
+
+        //保存编辑器的内容
+        
+        var insertArticle = new Vue({
+            el:"#insertArticle",
+            methods:{
+                insert:function(){
+                    axios({
+                        method:"post",
+                        url:"http://127.0.0.1:8080/articleInfo/insert",
+                        params:{
+                            title:$("#title").val(),
+                            content:editor.txt.html()
+                        }
+                    })
+                    .then(function(response){
+                        console.log(response)
+                    })
+                    .catch(function(error){
+                         console.log(error);
+                    });
+                }
+            }
+        });
+
+
+        // $(function(){
+        //     $("#saveText").click(function(){
+        //        text =  editor.txt.html();
+        //         $.post(
+        //             "http://127.0.0.1:8080/articleInfo/insert",
+        //             {"title":"title","content":text},
+        //             function(data){
+        //                 console.log(data);
+        //             },
+        //             "json"
+        //         );
+        //     });
+        // });
+
+    </script>
+</body>
+</html>

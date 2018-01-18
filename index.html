@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- vue.js用来渲染页面 -->
+    <script src="js/vue.js"></script>
+    <!-- axios.js用来发送get/post请求 -->
+    <script src="js/axios.js"></script>
+    <!-- 加载本地配置文件 -->
+    <script type="" src="config.js"></script>
+    <title>index</title>
+</head>
+<body>
+    
+
+    <!--导航-->
+    <div class="container-fluid">
+        <div class = "row" id = "navigation">
+            <div class = "col-md-10 col-md-offset-1">
+                <div class = "row">
+                    <div class = "col-md-2" v-for="title in titles">
+                        <h2><a v-bind:href="'index.html?id=' + title.type">{{title.text}}</a></h2>      
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!--内容-->
+    <div class="container-fluid">
+        <div class= "row">
+            <!--左侧内容展示-->
+            <div class = "col-md-8 col-md-offset-1" id = "content">
+                <!--遍历文章内容-->
+                <div class = "my_content" v-for="content in contents">
+                    <div class = "row">
+                        <div class = "col-md-3">
+                            <img v-bind:src="content.img" alt="这是一个图片" srcset="">
+                        </div>
+                        <div class = "col-md-9">
+                            <h3><a href="index.html">{{content.title}}</a></h3>
+                            <em>{{content.date}}</em>
+                            <p>{{content.content}}</p>
+                            
+                           <!--文章分类信息及按钮-->
+                            <div class = "row">
+                                <div class = "col-md-6">
+                                    <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                    {{content.category}}
+                                    <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>        
+                                    {{content.lable}}
+                                </div>
+                               
+                            </div><!--文章分类信息及按钮-->
+
+                        </div>
+                    </div>
+                    
+                </div><!--遍历文章内容-->
+                
+
+            </div><!--左侧内容展示-->
+
+            <!--右侧导航-->
+            <div class = "col-md-2">
+                <!--搜索框-->
+                <div class="row my_classify">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="站内搜索">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div><!--搜索框-->
+
+                <!--分类-->
+                <div class = "row my_classify">
+                    <div class = "col-md-12">
+                        <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> <span>分类</span> 
+                        <hr>
+
+                    </div>
+                </div><!--分类-->
+
+                <!--标签-->
+                <div class = "row my_classify">
+                    <div class = "col-md-12">
+                        <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> <span>标签</span> 
+                        <hr>
+    
+                    </div>
+                </div><!--标签-->
+
+                <!--归档-->
+                <div class = "row my_classify">
+                    <div class = "col-md-12">
+                        <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> <span>归档</span> 
+                         <hr>
+                        <h3>2018年</h3>
+                        <h4>&nbsp;&nbsp;1月<span>(3)</span></h4>
+                        <h4>&nbsp;&nbsp;2月<span>(2)</span></h4>
+                        <h4>&nbsp;&nbsp;3月<span>(1)</span></h4>
+                        <h3>2017年</h3>
+                        <h4>&nbsp;&nbsp;12月<span>(5)</span></h4>
+                        <h4>&nbsp;&nbsp;11月<span>(3)</span></h4>
+                        <h4>&nbsp;&nbsp;10月<span>(4)</span></h4>
+                    </div>
+                </div><!--归档-->
+
+            </div><!--右侧导航-->
+
+            
+        </div><!-- 内容 -->
+    </div>
+
+    <div class="container-fluid">
+        <div class = "row" id = "app1">
+            <div v-if="1 < 2">
+                Now you see me
+            </div>
+            <div v-else>
+                Now you don't me
+            </div>
+            
+        </div>
+    </div>
+              
+
+    <script>
+
+
+        var titlesArray = [
+                    {text:"首页",type:0},
+                    {text:"Oracle",type:1},
+                    {text:"Java",type:2},
+                    {text:"Linux",type:3},
+                    {text:"前端",type:4},
+                ];
+
+        var navigation = new Vue({
+            el:"#navigation",
+            data:{
+                titles:titlesArray
+            }
+        });
+        var content = new Vue({
+            el:"#content",
+            data:{
+                contents:[
+                    {img:"img/timg.jpg",
+                     title:"JavaScript代码检查工具对比",
+                     date:"2017-12-31",
+                     category:"前端",
+                     lable:"javascript",
+                     content:"JavaScript代码校验工具能够让你在写代码时避免一些低级的错误。尽管我有很多年的开发经验，我仍然会犯一些语法错误并且忘记处理我的错误。一个好的校验工具或者格式化工具，可以让我避免这些错误，以免浪费我的时间。一个好的校验工具还能..."
+                    },
+                    {img:"img/001.jpg",
+                     title:"史上最全的Webstorm快捷键及技巧",
+                     date:"2018-01-01",
+                     category:"工具",
+                     lable:"Webstorm",
+                     content:"Webstorm是一款前端开发神器，此文介绍webstorm的快捷键和技巧分享。 所谓工欲善其事，必先利其器嘛，想着如果要提高开发效率，那掌握一些常用的快捷键应该是少不了的，所以把webstorm快捷键及技巧分享给大家。持续更新中......"
+                    },
+                    {img:"img/002.jpeg",
+                     title:"站在人工智能风口的Python程序员",
+                     date:"2018-01-07",
+                     category:"工具",
+                     lable:"python",
+                     content:"2017年短短不到三个月的时间，国内AI获投项目已有36个，千万级别融资占据半数以上。 嗯，就是那么霸道。两会刚刚结束，“人工智能”首次被列入政府工作报告，随之而来的是人工智能板块领跑大盘涨势，无疑，这一切将刺激人工智能在多个领域......"
+                    },
+                ]
+            }
+            ,
+            methods:{
+                /*加载文章列表*/
+                getArticleList:function(){
+                    self = this;
+                    console.log("getArticleList");
+                    axios.get(myRequestUrl.articleInfo.getAll
+                    ,{
+                    })
+                    .then(function (response){
+                        var data = response.data.data;
+                        self.contents = data;
+                        console.log(data);
+                    })
+                    .catch(function (error){
+                        console.log(error);
+                    });
+                    
+                }
+            },
+            mounted:function(){
+                this.getArticleList();
+            }
+
+         
+        });
+        var app1 = new Vue({
+            el:"#app1"
+        });
+        
+        var index = 0;
+
+        /*
+         *变幻的导航条 
+         */
+        // function test(){
+        //     index = index  % titlesArray.length;
+            
+        //     if(navigation.titles.length >= titlesArray.length){
+        //         navigation.titles=[];
+        //     }
+            
+        //     navigation.titles.push(titlesArray[index]);
+            
+        //     console.log("---" + index);
+        //     index ++;
+        // };
+
+        // setInterval(test,3000);
+        console.log("---" + myRequestUrl.articleInfo.getAll );
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/wangEditor.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" method="post" action="http://127.0.0.1:8080/common/upload">
+        图片<input type="file" name="file"/>
+        <input type="submit" value="上传"/>
+    </form>
+
+    <div id = "editor">
+
+    </div>
+
+
+
+    <button id = "saveText">
+        提交
+    </button>
+
+    <div id = "showText">
+            
+    </div>
+    <script>
+        var E = window.wangEditor;
+        var editor = new E("#editor");
+        editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;//debug模式
+        editor.create();
+
+        var text;
+        //保存编辑器的内容
+        $(function(){
+            $("#saveText").click(function(){
+               text =  editor.txt.html();
+                $("#showText").html(text);
+
+                $.post(
+                    "http://127.0.0.1:8080/articleInfo/insert",
+                    {"title":"title","content":text},
+                    function(data){
+                        console.log(data);
+                    },
+                    "json"
+                );
+            });
+        });
+
+    </script>
+</body>
+</html>
