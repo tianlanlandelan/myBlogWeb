@@ -6,3 +6,7 @@ body {background-color: #d8e2eb;color:#5c5c5c}
 .my_content button{color:#ffffff;background-color: #e67e22}
 .my_classify {background-color:#f1ffff;margin-top: 20px;padding: 10px;}
 .my_classify span{color:#40759b;}
+.my_autocomplete{position:fixed;width:200px;text-align:left;top:30px}
+.my_autocomplete ul{background-color:#f1ffff;padding:10px;}
+.my_autocomplete ul li{list-style-type: none;cursor: pointer}
+.my_autocomplete ul li:hover{background-color: #2b542c;color:#ffffff}

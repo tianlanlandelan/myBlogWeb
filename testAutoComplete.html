@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/vue.js"></script>
+
+    <title>testAutoComplete</title>
+</head>
+<body>
+<div class = "container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            <div class="row form-group">
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="row form-group my_autocomplete" id="select">
+                <ul>
+                    <li v-for="data in datas" @click="liClick(data)">
+                        {{data}}
+                    </li>
+                </ul>
+            </div>
+            <div class="row form-group">
+                <input type="text" class="form-control">
+            </div>
+            <div class="row form-group">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var database = [
+            "ok",
+            "Oracle",
+            "Oracle 11g",
+            "Oracle or Mysql",
+            "origin",
+            "oh",
+            "Or",
+            "Open"
+        ];
+
+        $(function(){
+            $("#select").hide();
+
+            /**
+             * 输入框文字变化后的操作
+             * 1.
+             */
+           $("#title").keyup(function () {
+               var dataSelect = new Array();
+               var str = $(this).val().trim();
+               if(str == "" || str.lastIndexOf(";")+1 == str.length) {
+                   $("#select").hide();
+                   return;
+               }
+               if(str.lastIndexOf(";") != -1){
+                   str = str.substring(str.lastIndexOf(";")+1);
+                   console.log(str);
+               }
+
+               str = str.toLocaleLowerCase();
+               for(var index in database){
+                   var data = database[index];
+                   if(data.toLocaleLowerCase().indexOf(str) != -1){
+                       dataSelect.push(data);
+                   }
+               }
+               if(dataSelect != null && dataSelect.length > 0){
+                   vueSelect.datas = dataSelect;
+                   $("#select").show();
+               }else{
+                   $("#select").hide();
+               }
+           });
+
+        });
+        var vueSelect = new Vue({
+           el:"#select",
+            data:{
+               datas:[]
+            },
+            methods:{
+               liClick:function (data) {
+                   var title = $("#title").val().trim();
+                   if(title.lastIndexOf(";") != -1){
+                       title = title.substring(0,title.lastIndexOf(";") + 1) + data + ";";
+                   }else{
+                       title = data + ";";
+                   }
+                   $("#title").val(title);
+                   var index = database.indexOf(data);
+                   if(index > -1){
+                       database.splice(index,1);
+                   }
+                   $("#select").hide();
+               }
+            }
+        });
+    </script>
+</body>
+</html>
