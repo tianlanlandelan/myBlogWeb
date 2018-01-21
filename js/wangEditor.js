@@ -714,7 +714,7 @@ var config = {
     }],
 
     // 编辑区域的 z-index
-    zIndex: 10000,
+    zIndex: 888,
 
     // 是否开启 debug 模式（debug 模式下错误会 throw error 形式抛出）
     debug: false,
@@ -4374,11 +4374,14 @@ Editor.prototype = {
 
             // 自行创建的，需要配置默认的样式
             $toolbarElem.css('background-color', '#f1f1f1').css('border', '1px solid #ccc');
-            $textContainerElem.css('border', '1px solid #ccc').css('border-top', 'none').css('height', '300px');
+            //TODO 控制编辑区域的高度
+            $textContainerElem.css('border', '1px solid #ccc').css('border-top', 'none').css('height', '600px');
         } else {
             // toolbar 和 text 的选择器都有值，记录属性
             $toolbarElem = $toolbarSelector;
             $textContainerElem = $(textSelector);
+            $textContainerElem.css('border', '1px solid #ccc').css('border-top', 'none');
+
             // 将编辑器区域原有的内容，暂存起来
             $children = $textContainerElem.children();
         }

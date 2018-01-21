@@ -4,11 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!--基础样式表,含自动完成功能样式-->
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/wangEditor.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/vue.js"></script>
-    <script src="js/axios.js"></script>
+
     <title>edit</title>
 </head>
 <body>
@@ -21,11 +19,14 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-1">
+            <div class="col-md-8 col-md-offset-1 my_editor ">
+                <!--标题-->
                 <div class="row form-group">
                     <input type="text" id = "title" class="form-control" placeholder="标题：我们也曾年轻过">
-                </div>
+                </div><!--标题-->
+                <!--分类、标签-->
                 <div class="row form-group">
+                    <!--分类-->
                     <div class="col-md-6">
                         <select class="form-control">
                             <option value="0">选择分类</option>
@@ -35,46 +36,57 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                    </div>
+                    </div><!--分类-->
+                    <!--标签-->
                     <div class="col-md-6">
-                        <select multiple  class="form-control">
-                            <option value="0">选择标签</option>
-                        </select>
-                    </div>
+                        <!--标签输入框-->
+                        <div class="row form-group">
+                            <input type="text" id="autoCompInput" class="form-control">
+                        </div>
+                        <!--标签自动完成选择框-->
+                        <div class="row form-group my_autocomplete" id="autoCompSelect">
+                            <ul>
+                                <li v-for="data in datas" @click="liClick(data)">
+                                    {{data}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--标签-->
+                </div><!--分类、标签-->
+                <!--概要-->
+                <div class="row form-group" >
+
                 </div>
-            </div>
+                <!--wangEditor-->
+                <!--编辑器控制条-->
+                <div class="row form-group wangEditor1" id = "editor1">
+
+                </div>
+                <br>
+                <!--内容编辑区-->
+                <div class="row form-group wangEditor" id = "editor2">
+
+                </div>
+                <!--保存按钮-->
+                <div class="row form-group">
+                    <button id = "insertArticle" @click="insert()" class="form-control">
+                        提交
+                    </button>
+                </div>
+            </div><!--col-md-8 col-md-offset-1-->
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id = "editor">
-
-    </div>
-    <button id = "insertArticle" @click="insert()">
-        提交
-    </button>
-    <script>        
-        var E = window.wangEditor;
-        var editor = new E("#editor");
+    <script src="js/wangEditor.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.js"></script>
+    <script>
+        var editor = new wangEditor("#editor1","#editor2");
         editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
         editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;//debug模式
         editor.create();
-
         //保存编辑器的内容
-        
         var insertArticle = new Vue({
             el:"#insertArticle",
             methods:{
@@ -99,5 +111,7 @@
         });
 
     </script>
+    <!--自动完成功能的js-->
+    <script src="js/autoComp.js"></script>
 </body>
 </html>

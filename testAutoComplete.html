@@ -15,9 +15,9 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-1">
             <div class="row form-group">
-                <input type="text" id="title" class="form-control">
+                <input type="text" id="autoCompInput" class="form-control">
             </div>
-            <div class="row form-group my_autocomplete" id="select">
+            <div class="row form-group my_autocomplete" id="autoCompSelect">
                 <ul>
                     <li v-for="data in datas" @click="liClick(data)">
                         {{data}}
@@ -46,21 +46,20 @@
         ];
 
         $(function(){
-            $("#select").hide();
-
+            $("#autoCompSelect").hide();
             /**
              * 输入框文字变化后的操作
              * 1.
              */
-           $("#title").keyup(function () {
+           $("#autoCompInput").keyup(function () {
                var dataSelect = new Array();
                var str = $(this).val().trim();
-               if(str == "" || str.lastIndexOf(";")+1 == str.length) {
-                   $("#select").hide();
+               if(str == "" || str.lastIndexOf(",")+1 == str.length) {
+                   $("#autoCompSelect").hide();
                    return;
                }
-               if(str.lastIndexOf(";") != -1){
-                   str = str.substring(str.lastIndexOf(";")+1);
+               if(str.lastIndexOf(",") != -1){
+                   str = str.substring(str.lastIndexOf(",")+1);
                    console.log(str);
                }
 
@@ -73,32 +72,32 @@
                }
                if(dataSelect != null && dataSelect.length > 0){
                    vueSelect.datas = dataSelect;
-                   $("#select").show();
+                   $("#autoCompSelect").show();
                }else{
-                   $("#select").hide();
+                   $("#autoCompSelect").hide();
                }
            });
 
         });
         var vueSelect = new Vue({
-           el:"#select",
+           el:"#autoCompSelect",
             data:{
                datas:[]
             },
             methods:{
                liClick:function (data) {
-                   var title = $("#title").val().trim();
-                   if(title.lastIndexOf(";") != -1){
-                       title = title.substring(0,title.lastIndexOf(";") + 1) + data + ";";
+                   var title = $("#autoCompInput").val().trim();
+                   if(title.lastIndexOf(",") != -1){
+                       title = title.substring(0,title.lastIndexOf(",") + 1) + data + ",";
                    }else{
-                       title = data + ";";
+                       title = data + ",";
                    }
-                   $("#title").val(title);
+                   $("#autoCompInput").val(title);
                    var index = database.indexOf(data);
                    if(index > -1){
                        database.splice(index,1);
                    }
-                   $("#select").hide();
+                   $("#autoCompSelect").hide();
                }
             }
         });
