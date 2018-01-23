@@ -21,12 +21,12 @@ $(function(){
     $("#autoCompInput").keyup(function () {
         var dataSelect = new Array();
         var str = $(this).val().trim();
-        if(str == "" || str.lastIndexOf(",")+1 == str.length) {
+        if(str == "" || str.lastIndexOf(";")+1 == str.length) {
             $("#autoCompSelect").hide();
             return;
         }
-        if(str.lastIndexOf(",") != -1){
-            str = str.substring(str.lastIndexOf(",")+1);
+        if(str.lastIndexOf(";") != -1){
+            str = str.substring(str.lastIndexOf(";")+1);
             console.log(str);
         }
         str = str.toLocaleLowerCase();
@@ -57,10 +57,10 @@ var vueSelect = new Vue({
     methods:{
         liClick:function (data) {
             var title = $("#autoCompInput").val().trim();
-            if(title.lastIndexOf(",") != -1){
-                title = title.substring(0,title.lastIndexOf(",") + 1) + data + ",";
+            if(title.lastIndexOf(";") != -1){
+                title = title.substring(0,title.lastIndexOf(";") + 1) + data + ";";
             }else{
-                title = data + ",";
+                title = data + ";";
             }
             $("#autoCompInput").val(title);
             var index = autoCompDatabase.indexOf(data);

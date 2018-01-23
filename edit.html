@@ -10,39 +10,41 @@
     <title>edit</title>
 </head>
 <body>
-
-    <div class = "container-fluid">
+    <!--header-->
+    <div class = "container-fluid my_top">
         <div class="row">
-
+            <div class="col-md-3 col-md-offset-1">
+                <h3>写文章</h3>
+            </div>
         </div>
-    </div>
-
+    </div><!--header-->
+    <!--内容-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-1 my_editor ">
+            <div class="col-md-10 col-md-offset-1 my_editor ">
                 <!--标题-->
                 <div class="row form-group">
-                    <input type="text" id = "title" class="form-control" placeholder="标题：我们也曾年轻过">
+                    <div class="col-md-12">
+                        <input type="text" id = "articleTitle" class="form-control" placeholder="标题：我们也曾年轻过">
+                    </div>
                 </div><!--标题-->
                 <!--分类、标签-->
                 <div class="row form-group">
                     <!--分类-->
-                    <div class="col-md-6">
-                        <select class="form-control">
+                    <div class="col-md-3">
+                        <select id = "articleType" class="form-control">
                             <option value="0">选择分类</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div><!--分类-->
                     <!--标签-->
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                         <!--标签输入框-->
-                        <div class="row form-group">
-                            <input type="text" id="autoCompInput" class="form-control">
-                        </div>
+                            <input type="text" id="autoCompInput" class="form-control" placeholder="添加标签，不同标签请用英文逗号隔开">
                         <!--标签自动完成选择框-->
                         <div class="row form-group my_autocomplete" id="autoCompSelect">
                             <ul>
@@ -55,32 +57,47 @@
                 </div><!--分类、标签-->
                 <!--概要-->
                 <div class="row form-group" >
-
+                    <div class="col-md-12">
+                        <span><strong>概要</strong>（选填，当不填写时，默认取文章内容前120字展示位文章概要）</span>
+                        <textarea id = "articleOutline" class="form-control"></textarea>
+                    </div>
                 </div>
                 <!--wangEditor-->
-                <!--编辑器控制条-->
-                <div class="row form-group wangEditor1" id = "editor1">
-
-                </div>
-                <br>
-                <!--内容编辑区-->
-                <div class="row form-group wangEditor" id = "editor2">
-
-                </div>
-                <!--保存按钮-->
-                <div class="row form-group">
-                    <button id = "insertArticle" @click="insert()" class="form-control">
-                        提交
-                    </button>
-                </div>
+                <div class="row form-group" >
+                    <div class="col-md-12">
+                        <!--编辑器控制条-->
+                        <div class="row form-group wangEditor1" id = "editor1"></div>
+                        <!--内容编辑区-->
+                        <div class="row form-group wangEditor" id = "editor2"></div>
+                    </div>
+                </div><!--wangEditor-->
             </div><!--col-md-8 col-md-offset-1-->
         </div>
-    </div>
+    </div><!--内容-->
+
+    <!--footer-->
+    <div class = "container-fluid">
+        <div class="row my_bottom">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-2">
+                <button  class="form-control btn-primary">保存</button>
+            </div>
+            <div class="col-md-2">
+                <button id = "insertArticle" @click="insert()" class="form-control btn-success">发布</button>
+            </div>
+            <div class="col-md-2">
+                <button class="form-control  btn-warning">定时发布</button>
+            </div>
+        </div>
+    </div><!--footer-->
+
 
     <script src="js/wangEditor.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/axios.js"></script>
+    <script src="config.js"></script>
     <script>
         var editor = new wangEditor("#editor1","#editor2");
         editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
@@ -93,11 +110,14 @@
                 insert:function(){
                     axios({
                         method:"post",
-                        url:"http://127.0.0.1:8080/articleInfo/insert",
+                        url:myRequestUrl.articleInfo.insert,
                         data:{
-                            title:$("#title").val(),
+                            title:$("#articleTitle").val(),
                             content:editor.txt.html(),
-                            txtContent:editor.txt.text()
+                            outline:$("#articleOutline").val(),
+                            txtContent:editor.txt.text(),
+                            typeId:$("#articleType").val(),
+                            tagNames:$("#autoCompInput").val()
                         }
                     })
                     .then(function(response){

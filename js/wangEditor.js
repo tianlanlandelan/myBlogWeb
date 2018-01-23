@@ -4379,8 +4379,9 @@ Editor.prototype = {
         } else {
             // toolbar 和 text 的选择器都有值，记录属性
             $toolbarElem = $toolbarSelector;
+            $toolbarElem.css('background-color', '#f1f1f1').css('border', '1px solid #ccc');
             $textContainerElem = $(textSelector);
-            $textContainerElem.css('border', '1px solid #ccc').css('border-top', 'none');
+            $textContainerElem.css('border', '1px solid #ccc').css('border-top', 'none').css('background-color', '#ffffff');
 
             // 将编辑器区域原有的内容，暂存起来
             $children = $textContainerElem.children();
