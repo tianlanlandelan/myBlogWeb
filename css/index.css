@@ -13,6 +13,7 @@ body {background-color: #d8e2eb;color:#5c5c5c}
 .wangEditor {height:50%;max-height:5000px;background-color:#f1ffff;}
 .wangEditor1 {background-color:#ffffff;}
 .my_editor{background-color: #f1f2ff}
-textarea{width:100%; max-width:100%; }
+.my_textarea{width:100%; max-width:100%;}
 .my_bottom{background-color: #f1f1f1;padding: 10px;}
 .my_top{background-color: #f1f1f1;}
+.my_img{width:60%}
