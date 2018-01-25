@@ -64,10 +64,18 @@
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col-md-6">
-                                <form enctype="multipart/form-data" method="post" action="http://127.0.0.1:8080/common/upload">
+                                <form id = "imgUploadForm" enctype="multipart/form-data" method="post" action="http://127.0.0.1:8080/common/upload">
                                     <span><strong>文章缩略图</strong>（可选）</span>
-                                    <input type="file" name="file" accept="image/*" class="form-inline" id="imgSelectBtn"/>
-                                    <input type="submit" value="上传" class="form-inline"/>
+                                    <input type="file" name="file" accept="image/*" class="form-group" id="imgSelectBtn"/>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="submit" value="上 传" class="form-control  btn-primary btn-group-sm"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span id = "imgUnUploadMessage">图片尚未上传</span>
+                                            <span id = "imgUploadMessage">上传成功</span>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                             <div class="col-md-6">
@@ -109,10 +117,12 @@
 
     <script src="js/wangEditor.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.form.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/axios.js"></script>
     <script src="config.js"></script>
     <script>
+        var aritcleImg;
         var editor = new wangEditor("#editor1","#editor2");
         editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
         editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;//debug模式
@@ -131,7 +141,8 @@
                             outline:$("#articleOutline").val(),
                             txtContent:editor.txt.text(),
                             typeId:$("#articleType").val(),
-                            tagNames:$("#autoCompInput").val()
+                            tagNames:$("#autoCompInput").val(),
+                            imgUrl:aritcleImg
                         }
                     })
                     .then(function(response){
@@ -144,8 +155,21 @@
             }
         });
     $(function(){
+
+        $("#imgUnUploadMessage").hide();
+        $("#imgUploadMessage").hide();
+        /* 异步上传图片 */
+        $("#imgUploadForm").ajaxForm(function (result) {
+            console.log(result.data[0]);
+            aritcleImg = result.data[0];
+            $("#imgUnUploadMessage").hide();
+            $("#imgUploadMessage").show();
+        });
+
         /* 图片预览功能  */
        $("#imgSelectBtn").change(function(){
+           $("#imgUnUploadMessage").show();
+           $("#imgUploadMessage").hide();
            var img = this.files[0];
            var reader = new FileReader();
            reader.readAsDataURL(img);

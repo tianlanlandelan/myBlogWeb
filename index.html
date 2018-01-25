@@ -42,12 +42,12 @@
                 <div class = "my_content" v-for="content in contents">
                     <div class = "row">
                         <div class = "col-md-3">
-                            <img v-bind:src="content.img" alt="这是一个图片" srcset="">
+                            <img v-bind:src="'img/' + content.imgUrl" alt="这是一个图片" srcset="">
                         </div>
                         <div class = "col-md-9">
                             <h3><a href="index.html">{{content.title}}</a></h3>
                             <em>{{content.sendTimeStr}}</em>
-                            <p>{{content.content}}</p>
+                            <p>{{content.outline}}</p>
                             
                            <!--文章分类信息及按钮-->
                             <div class = "row">
