@@ -57,15 +57,15 @@
                 </div><!--分类、标签-->
                 <!--概要-->
                 <div class="row form-group" >
-                    <div class="col-md-6">
-                        <span><strong>概要</strong>（可选，当不填写时，默认取文章内容前120字作为概要）</span>
+                    <div class="col-md-7">
+                        <span><strong>文章概要</strong>（可选，当不填写时，默认取文章内容前120字作为概要）</span>
                         <textarea id = "articleOutline" class="form-control my_textarea"></textarea>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <div class="row">
                             <div class="col-md-6">
                                 <form enctype="multipart/form-data" method="post" action="http://127.0.0.1:8080/common/upload">
-                                    <span><strong>缩略图</strong>（可选，用于在文章列表中展示的图片）</span>
+                                    <span><strong>文章缩略图</strong>（可选）</span>
                                     <input type="file" name="file" accept="image/*" class="form-inline" id="imgSelectBtn"/>
                                     <input type="submit" value="上传" class="form-inline"/>
                                 </form>
