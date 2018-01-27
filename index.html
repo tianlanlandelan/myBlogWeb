@@ -45,7 +45,7 @@
                             <img v-bind:src="'img/' + content.imgUrl" alt="这是一个图片" srcset="">
                         </div>
                         <div class = "col-md-9">
-                            <h3><a href="index.html">{{content.title}}</a></h3>
+                            <h3><a v-bind:href="'view.html?id=' + content.id">{{content.title}}</a></h3>
                             <em>{{content.sendTimeStr}}</em>
                             <p>{{content.outline}}</p>
                             
@@ -54,7 +54,7 @@
                                 <div class = "col-md-6">
                                     <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
                                     {{content.type}}
-                                    <span v-for="tag in content.tags">
+                                    <span v-for="tag in content.tagList">
                                         <span class="glyphicon glyphicon-tags" aria-hidden="true" ></span>
                                         {{tag}}
                                     </span>
@@ -158,29 +158,7 @@
         var content = new Vue({
             el:"#content",
             data:{
-                contents:[
-//                    {img:"img/timg.jpg",
-//                     title:"JavaScript代码检查工具对比",
-//                     date:"2017-12-31",
-//                     category:"前端",
-//                     lable:"javascript",
-//                     content:"JavaScript代码校验工具能够让你在写代码时避免一些低级的错误。尽管我有很多年的开发经验，我仍然会犯一些语法错误并且忘记处理我的错误。一个好的校验工具或者格式化工具，可以让我避免这些错误，以免浪费我的时间。一个好的校验工具还能..."
-//                    },
-//                    {img:"img/001.jpg",
-//                     title:"史上最全的Webstorm快捷键及技巧",
-//                     date:"2018-01-01",
-//                     category:"工具",
-//                     lable:"Webstorm",
-//                     content:"Webstorm是一款前端开发神器，此文介绍webstorm的快捷键和技巧分享。 所谓工欲善其事，必先利其器嘛，想着如果要提高开发效率，那掌握一些常用的快捷键应该是少不了的，所以把webstorm快捷键及技巧分享给大家。持续更新中......"
-//                    },
-//                    {img:"img/002.jpeg",
-//                     title:"站在人工智能风口的Python程序员",
-//                     date:"2018-01-07",
-//                     category:"工具",
-//                     lable:"python",
-//                     content:"2017年短短不到三个月的时间，国内AI获投项目已有36个，千万级别融资占据半数以上。 嗯，就是那么霸道。两会刚刚结束，“人工智能”首次被列入政府工作报告，随之而来的是人工智能板块领跑大盘涨势，无疑，这一切将刺激人工智能在多个领域......"
-//                    },
-                ]
+                contents:[]
             }
             ,
             methods:{

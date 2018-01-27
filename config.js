@@ -13,6 +13,7 @@ var myConfig = {
 var myRequestUrl ={
         "articleInfo":{
             "getAll":myConfig.hostUrl + "/articleInfo/getAll",
-            "insert":myConfig.hostUrl + "/articleInfo/insert"
+            "insert":myConfig.hostUrl + "/articleInfo/insert",
+            "getById":myConfig.hostUrl + "/articleInfo/getById",
         }
     };
