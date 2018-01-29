@@ -12,11 +12,26 @@
         <div class="row">
             <!--左侧内容-->
             <div class="col-md-8 col-md-offset-1" id = "articleContent">
-                <div class="row"><h2>{{result.title}}</h2></div>
-                <div class="row">{{result.sendTimeStr}}
-                    <span v-for="tag in result.tagList">{{tag}}</span>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>{{result.title}}</h2>
+                    </div>
                 </div>
-                <div class="row" v-html="result.content"></div>
+                <div class="row">
+                    <div class="col-md-3">
+                        {{result.sendTimeStr}}
+                    </div>
+                    <div class="col-md-6">
+                        <span v-for="tag in result.tagList">
+                            <span class="glyphicon glyphicon-tags" aria-hidden="true" ></span>
+                            {{tag}}
+                         </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12" v-html="result.content"></div>
+                </div>
 
             </div><!--左侧内容-->
 
@@ -28,23 +43,6 @@
     <script src="js/vue.js"></script>
     <script src="js/axios.js"></script>
     <script>
-//        $(function () {
-//            var href = window.location.href;
-//            var parameter;
-//            if(href.lastIndexOf("?") != -1 ){
-//                parameter = href.substring(href.lastIndexOf("?") + 1);
-//                var id = parameter.substring(parameter.lastIndexOf("=") + 1);
-//                $.post(
-//                    myRequestUrl.articleInfo.getById,
-//                    {id:id},
-//                    function (result) {
-//                        console.log(result);
-//                        $("#articleContent").html(result.data[0].content);
-//                    },"json"
-//                );
-//            }
-//
-//        });
 var articleContent = new Vue({
     el:"#articleContent",
     data:{
