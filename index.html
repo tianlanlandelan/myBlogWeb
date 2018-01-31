@@ -51,15 +51,23 @@
                             
                            <!--文章分类信息及按钮-->
                             <div class = "row">
-                                <div class = "col-md-6">
-                                    <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
-                                    {{content.type}}
-                                    <span v-for="tag in content.tagList">
-                                        <span class="glyphicon glyphicon-tags" aria-hidden="true" ></span>
-                                        {{tag}}
-                                    </span>
-
+                                <div class = "col-md-3">
+                                    <span>分类:【<span>{{content.typeName}}</span>】</span>
                                 </div>
+                                <div class="col-md-3">
+                                    <span>阅读:【1001】</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span>评论:【9999】</span>
+                                </div>
+
+
+                                    <!--<span v-if = "content.tagList.length > 0">-->
+                                            <!--<strong>【标签】</strong>-->
+                                            <!--<span v-for="tag in content.tagList">{{tag}} </span>-->
+                                    <!--</span>-->
+
+
                                
                             </div><!--文章分类信息及按钮-->
 
