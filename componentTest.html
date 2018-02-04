@@ -14,6 +14,8 @@
 <div id = "app">
     <my-component></my-component>
     <my-nav :titles="titles"></my-nav>
+    <!-- 在向组件传递参数activeIndex时，必须写成:active-index的格式，否则无法传递 -->
+    <my-test :active-index="activeIndex"></my-test>
 </div>
 
 <script src="js/my-vue,js.js"></script>
@@ -26,12 +28,16 @@
         {text:"前端",type:4,href:"index.html?id=4"},
         {text:"后端",type:5,href:"index.html?id=5"}
     ];
-    new Vue({
-        el:"#app",
-        data:{
-            titles:titlesArray
+    var Main = {
+        data: function() {
+            return {
+                titles:titlesArray,
+                activeIndex: "3"
+            };
         }
-    });
+    };
+    var Ctor = Vue.extend(Main);
+    new Ctor().$mount('#app');
 </script>
 </body>
 </html>

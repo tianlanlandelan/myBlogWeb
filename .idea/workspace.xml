@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a003a7df-8fe8-4852-bea2-9b2baaf32746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/componentTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/element.ui.index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/element.ui.index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/my-vue,js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testElementUI.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/componentTest.html" afterPath="$PROJECT_DIR$/componentTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/my-vue,js.js" afterPath="$PROJECT_DIR$/js/my-vue,js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testElementUI.html" afterPath="$PROJECT_DIR$/testElementUI.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,24 +17,24 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.69947505">
+    <splitter split-orientation="vertical" split-proportion="0.7440945">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="componentTest.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="componentTest.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/componentTest.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+                <state relative-caret-position="355">
+                  <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="my-vue,js.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="my-vue,js.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/my-vue,js.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state relative-caret-position="364">
+                  <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
                   <folding />
                 </state>
               </provider>
@@ -45,8 +43,8 @@
           <file leaf-file-name="testElementUI.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/testElementUI.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
+                <state relative-caret-position="66">
+                  <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
                   <folding />
                 </state>
               </provider>
@@ -59,8 +57,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+                <state relative-caret-position="88">
+                  <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -103,8 +101,8 @@
         <option value="$PROJECT_DIR$/scss/index.scss" />
         <option value="$PROJECT_DIR$/css/element.ui.index.css" />
         <option value="$PROJECT_DIR$/testElementUI.html" />
-        <option value="$PROJECT_DIR$/js/my-vue,js.js" />
         <option value="$PROJECT_DIR$/componentTest.html" />
+        <option value="$PROJECT_DIR$/js/my-vue,js.js" />
       </list>
     </option>
   </component>
@@ -596,7 +594,7 @@
       <workItem from="1517012296502" duration="8594000" />
       <workItem from="1517316928732" duration="2682000" />
       <workItem from="1517400501661" duration="29000" />
-      <workItem from="1517619626085" duration="9723000" />
+      <workItem from="1517619626085" duration="13475000" />
     </task>
     <task id="LOCAL-00001" summary="初始导入">
       <created>1516286984334</created>
@@ -616,7 +614,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67778000" />
+    <option name="totallyTimeSpent" value="71530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1048,32 +1046,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testElementUI.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
+        <state relative-caret-position="66">
+          <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/my-vue,js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="88">
+          <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/componentTest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        <state relative-caret-position="355">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/my-vue,js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
           <folding />
         </state>
       </provider>
