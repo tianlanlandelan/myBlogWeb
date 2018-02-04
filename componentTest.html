@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ComponentTest</title>
-    <link rel="stylesheet" href="css/element.ui.index.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.1.0/lib/theme-chalk/index.css">
     <script src="js/vue.js"></script>
     <script src="js/element.ui.index.js"></script>
     <style>
@@ -12,6 +12,11 @@
 </head>
 <body>
 <div id = "app">
+
+    <i class="el-icon-edit"></i>
+    <i class="el-icon-share"></i>
+    <i class="el-icon-delete"></i>
+
     <my-component></my-component>
     <my-nav :titles="titles"></my-nav>
     <!-- 在向组件传递参数activeIndex时，必须写成:active-index的格式，否则无法传递 -->
