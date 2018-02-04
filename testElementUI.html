@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/element.ui.index.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element.ui.index.js"></script>
+    <title>Title</title>
+    <style>
+        .bg-purple {
+            background: #d3dce6;
+        }
+        .grid-content {
+            border-radius: 4px;
+            min-height: 36px;
+            margin-bottom: 10px;
+        }
+        .bg-purple1 {
+            padding:10px;
+            background: #d3dcee;
+        }
+        .bg-purple2 {
+            padding:10px;
+            background: #d3ffe6;
+        }
+        .bg-purple3 {
+            padding:10px;
+            background: #dddce6;
+        }
+    </style>
+</head>
+<body>
+<div id = "app">
+    <el-row :gutter="10">
+        <el-col :xs="24" :sm="12" :md="8" :lg="6" >
+            <div class="grid-content bg-purple">dd
+            </div>
+        </el-col>
+        <el-col :xs="24" :sm="12" :md="8" :lg="6" >
+            <div class="grid-content bg-purple">dd
+            </div>
+        </el-col>
+        <el-col :xs="24" :sm="12" :md="8" :lg="6" >
+            <div class="grid-content bg-purple">
+            </div>
+        </el-col>
+        <el-col :xs="24" :sm="12" :md="8" :lg="6" >
+            <div class="grid-content bg-purple hidden-md-and-down">
+                hidden-md-and-down
+            </div>
+        </el-col>
+    </el-row>
+
+
+    <el-container>
+        <el-header class="bg-purple1">Header</el-header>
+        <el-container>
+            <el-aside class="bg-purple2" width="200px">Aside</el-aside>
+
+            <el-container>
+                <el-header class="bg-purple">Header</el-header>
+                <el-main class="bg-purple3">
+                    <i class="el-icon-edit"></i>
+                    <i class="el-icon-share"></i>
+                    <i class="el-icon-delete"></i>
+                    <el-button type="primary" icon="el-icon-search">搜索</el-button>
+                </el-main>
+                <el-footer class="bg-purple1">
+                    <div>
+                        <el-button round>圆形按钮</el-button>
+                        <el-button type="primary" round>主要按钮</el-button>
+                        <el-button type="success" round>成功按钮</el-button>
+                        <el-button type="info" round>信息按钮</el-button>
+                        <el-button type="warning" round>警告按钮</el-button>
+                        <el-button type="danger" round>危险按钮</el-button>
+                    </div>
+                </el-footer>
+            </el-container>
+
+        </el-container>
+    </el-container>
+</div>
+
+
+<script>
+    new Vue().$mount("#app");
+</script>
+</body>
+</html>

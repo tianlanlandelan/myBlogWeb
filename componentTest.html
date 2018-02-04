@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ComponentTest</title>
+    <link rel="stylesheet" href="css/element.ui.index.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element.ui.index.js"></script>
+    <style>
+        my-nav{padding:0px;margin: 0px;}
+    </style>
+</head>
+<body>
+<div id = "app">
+    <my-component></my-component>
+    <my-nav :titles="titles"></my-nav>
+</div>
+
+<script src="js/my-vue,js.js"></script>
+<script>
+    var titlesArray = [
+        {text:"首页",type:0,href:"index.html?id=0"},
+        {text:"Oracle",type:1,href:"index.html?id=1"},
+        {text:"Java",type:2,href:"index.html?id=2"},
+        {text:"Linux",type:3,href:"index.html?id=3"},
+        {text:"前端",type:4,href:"index.html?id=4"},
+        {text:"后端",type:5,href:"index.html?id=5"}
+    ];
+    new Vue({
+        el:"#app",
+        data:{
+            titles:titlesArray
+        }
+    });
+</script>
+</body>
+</html>
