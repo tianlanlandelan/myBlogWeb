@@ -13,9 +13,11 @@
 <body>
 <div id = "app">
 
-    <i class="el-icon-edit"></i>
-    <i class="el-icon-share"></i>
-    <i class="el-icon-delete"></i>
+
+    <!--自动完成组件的引用方式  data-list:可选项的数据源  data-string:初始化时输入框显示的值  data-return:组件返回的结果（最终在输入框显示的值） -->
+    <my-auto-comp :data-list="list" :data-string="'aaa'" :data-return.sync="foo"></my-auto-comp>
+
+    <button  @click="test">-----</button>
 
     <my-component></my-component>
     <my-nav :titles="titles"></my-nav>
@@ -23,7 +25,7 @@
     <my-test :active-index="activeIndex"></my-test>
 </div>
 
-<script src="js/my-vue,js.js"></script>
+<script src="js/my-vue.js"></script>
 <script>
     var titlesArray = [
         {text:"首页",type:0,href:"index.html?id=0"},
@@ -37,8 +39,22 @@
         data: function() {
             return {
                 titles:titlesArray,
-                activeIndex: "3"
+                activeIndex: "3",
+                list:["ok",
+                    "Oracle",
+                    "Oracle 11g",
+                    "Oracle or Mysql",
+                    "origin",
+                    "oh",
+                    "Or",
+                    "Open"],
+                foo:"a"
             };
+        },
+        methods:{
+            test:function () {
+                console.log(this.foo);
+            }
         }
     };
     var Ctor = Vue.extend(Main);

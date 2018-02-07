@@ -76,15 +76,7 @@
                     </el-select>
                 </el-col>
                 <el-col :md="18">
-                    <el-input type="text" id="autoCompInput" class="form-control" placeholder="添加标签，不同标签请用英文逗号隔开" />
-                    <!--标签自动完成选择框-->
-                    <div class="my_autocomplete" id="autoCompSelect">
-                        <ul>
-                            <li v-for="data in datas" @click="liClick(data)">
-                                {{data}}
-                            </li>
-                        </ul>
-                    </div>
+                    <my-auto-comp :data-list="list" :data-string="string" :data-return.sync="foo"></my-auto-comp>
                 </el-col>
             </el-row><!--分类标签-->
 
@@ -151,9 +143,45 @@
 <script src="js/axios.js"></script>
 <script src="config.js"></script>
 <script src="js/element.ui.index.js"></script>
+<script src="js/my-vue.js"></script>
 <script>
     var app = new Vue({
-        el:"#app"
+        el:"#app",
+        data:{
+            list:["ok",
+                "Oracle",
+                "Oracle 11g",
+                "Oracle or Mysql",
+                "origin",
+                "oh",
+                "Or",
+                "Open"],
+            foo:"a",
+            string:null
+        },
+        methods:{
+            insert:function(){
+//                axios({
+//                    method:"post",
+//                    url:myRequestUrl.articleInfo.insert,
+//                    data:{
+//                        title:$("#articleTitle").val(),
+//                        content:editor.txt.html(),
+//                        outline:$("#articleOutline").val(),
+//                        txtContent:editor.txt.text(),
+//                        typeId:$("#articleType").val(),
+//                        tagNames:$("#autoCompInput").val(),
+//                        imgUrl:aritcleImg
+//                    }
+//                })
+//                    .then(function(response){
+//                        console.log(response)
+//                    })
+//                    .catch(function(error){
+//                        console.log(error);
+//                    });
+            }
+        }
     });
 
     var aritcleImg;
@@ -161,33 +189,7 @@
     editor.customConfig.uploadImgShowBase64 = true;   // 使用 base64 保存图片
     editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0;//debug模式
     editor.create();
-    //保存编辑器的内容
-    var insertArticle = new Vue({
-        el:"#insertArticle",
-        methods:{
-            insert:function(){
-                axios({
-                    method:"post",
-                    url:myRequestUrl.articleInfo.insert,
-                    data:{
-                        title:$("#articleTitle").val(),
-                        content:editor.txt.html(),
-                        outline:$("#articleOutline").val(),
-                        txtContent:editor.txt.text(),
-                        typeId:$("#articleType").val(),
-                        tagNames:$("#autoCompInput").val(),
-                        imgUrl:aritcleImg
-                    }
-                })
-                    .then(function(response){
-                        console.log(response)
-                    })
-                    .catch(function(error){
-                        console.log(error);
-                    });
-            }
-        }
-    });
+
     $(function(){
 
         $("#imgUnUploadMessage").hide();
@@ -213,7 +215,5 @@
         });
     });
 </script>
-<!--自动完成功能的js-->
-<script src="js/autoComp.js"></script>
 </body>
 </html>
