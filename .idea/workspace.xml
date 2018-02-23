@@ -2,8 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a003a7df-8fe8-4852-bea2-9b2baaf32746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit1.html" afterPath="$PROJECT_DIR$/edit1.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/charts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/base-admin-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/font-awesome-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/pages/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/pages/faq.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/pages/plans.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/pages/reports.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/pages/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/error.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/fontawesome-webfont.svgz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/font/fontawesome-webfontd41d.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/guidely.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/body-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/glyphicons-halflings-white.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/glyphicons-halflings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/icons-sa7c41345d9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/message_avatar1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/message_avatar2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/signin/check.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/signin/fb_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/signin/password.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/signin/twitter_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/img/signin/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/chart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/charts/area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/charts/bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/charts/donut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/charts/line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/charts/pie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/faq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/full-calendar/fullcalendar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/full-calendar/fullcalendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/guidely/guidely-number.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/guidely/guidely.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/guidely/guidely.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/jquery-1.7.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/js/signin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/pricing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/reports.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/shortcodes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admintemplate/signup.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,6 +212,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\myBlogWeb" />
       <recent name="D:\IdeaProjects\myBlogWeb\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -572,7 +631,7 @@
       <workItem from="1517316928732" duration="2682000" />
       <workItem from="1517400501661" duration="29000" />
       <workItem from="1517619626085" duration="15941000" />
-      <workItem from="1519182214398" duration="1647000" />
+      <workItem from="1519182214398" duration="1849000" />
     </task>
     <task id="LOCAL-00001" summary="初始导入">
       <created>1516286984334</created>
@@ -592,7 +651,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75643000" />
+    <option name="totallyTimeSpent" value="75845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="210" width="1936" height="1056" extended-state="0" />
@@ -672,28 +731,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/wangEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96514">
-          <caret line="4387" column="9" lean-forward="false" selection-start-line="4387" selection-start-column="9" selection-end-line="4387" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/autoComp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1030,6 +1067,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admintemplate/js/charts/bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admintemplate/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admintemplate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="503" column="13" lean-forward="true" selection-start-line="503" selection-start-column="13" selection-end-line="503" selection-end-column="13" />
           <folding />
         </state>
       </provider>
