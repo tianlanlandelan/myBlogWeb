@@ -30,6 +30,54 @@ Vue.component('my-test',{
         }
     }
 });
+
+Vue.component('my-left-menu',{
+   props:[],
+    template:'<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">'+
+           '<el-submenu index="1" >    '+
+           '<template slot="title">   '+
+           '<i class="el-icon-location"></i>  '+
+           '<span>内容管理 </span>    '+
+           '</template>   '+
+               '<el-menu-item style="min-width: 50px" index="1-1" @click="handleClick(1,9)">文章管理</el-menu-item> '+
+               '<el-menu-item style="min-width: 50px" index="1-2">评论管理</el-menu-item> '+
+               '<el-menu-item style="min-width: 50px" index="1-3">分类/标签管理</el-menu-item>  '+
+           '</el-submenu> '+
+           '<el-submenu index="2">    '+
+           '<template slot="title">   '+
+           '<i class="el-icon-menu"></i>  '+
+           '<span slot="title">用户管理 </span>   '+
+           '</template>   '+
+                '<el-menu-item style="min-width: 50px" index="2-1">用户列表</el-menu-item> '+
+           '</el-submenu> '+
+           '<el-submenu index="3">    '+
+           '<template slot="title">   '+
+           '<i class="el-icon-document"></i>  '+
+           '<span>数据统计 </span>    '+
+           '</template>   '+
+                '<el-menu-item style="min-width: 50px" index="3-1">访问量</el-menu-item>  '+
+           '</el-submenu> '+
+           '<el-submenu index="4">    '+
+           '<template slot="title">   '+
+           '<i class="el-icon-setting"></i>   '+
+           '<span slot="title">设 置 </span>    '+
+           '</template>   '+
+                '<el-menu-item style="min-width: 50px" index="4-1">博客设置</el-menu-item> '+
+           '</el-submenu> '+
+           '</el-menu>'  ,
+    methods:{
+        handleOpen:function(key, keyPath) {
+            console.log("handleOpen--",key, keyPath);
+        },
+        handleClose:function(key, keyPath) {
+            console.log("handleClose--",key, keyPath);
+        },
+        handleClick:function(key, keyPath) {
+            console.log("handleClick--",key, keyPath);
+        }
+    }
+});
+
 /**
  * 自动完成组件
  * 使用了element ui的el-input组件后，js原有的onkeyup事件失效，于是只能采用在el-input组件外套用span标签解决
