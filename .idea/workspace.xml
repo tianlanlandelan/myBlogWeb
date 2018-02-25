@@ -2,462 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a003a7df-8fe8-4852-bea2-9b2baaf32746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/elementDemo1.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/charts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/email1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/email2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/email3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/email4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/email5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/email6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_404_option1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_404_option2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_404_option3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_500_option1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_500_option2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_faq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_image_manager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_invoice.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_lock.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_pricing_table.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_profile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/extra_search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_dropzone.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_fileupload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_samples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/form_wizard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/inbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/inbox_inbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_ajax_content_2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_ajax_content_3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_blank_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_boxed_not_responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_boxed_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_email.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_horizontal_menu1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_horizontal_menu2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_horizontal_sidebar_menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_promo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/layout_sidebar_closed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/login_soft.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/maps_google.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/maps_vector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/DT_bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/about-us.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-fileupload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-modal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-responsive1.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-tag.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-toggle-buttons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-tree.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap-wysihtml5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/brown.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/chosen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/clockface.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/colorpicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/coming-soon.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/daterangepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/dropzone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/email.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/error.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/glyphicons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/halflings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/inbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/invoice.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery-ui-1.10.1.custom.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.easy-pie-chart.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.fancybox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.fileupload-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.gritter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.nestable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.tagsinput.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jquery.ui.slider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/jqvmap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/light.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/lock.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/login-soft.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/multi-select-metro.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/news.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/pricing-tables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/profile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/promo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/search.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/select2_metro.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/style-metro.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/style-non-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/style-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/timeline.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/timepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/css/uniform.default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/KwPYo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ajax-loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/amazon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/avatar1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/avatar1_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/avatar2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/avatar3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/behance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg-input-focus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg-input.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg-white-lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bg/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/blogger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/bstree-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/chosen-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/datatable-row-openclose.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/deviantart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/dribbble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/dropbox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/earth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/evernote.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fancybox_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fancybox_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fancybox_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/forrst.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/github.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons_halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons_halflings-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons_halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphicons_halflings.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphiconshalflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphiconshalflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphiconshalflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/glyphiconshalflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/googleplus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/gritter-brown.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/gritter-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/gritter-purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/gritter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/hor-menu-search-close-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/hor-menu-search-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/hor-menu-search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/icon-color-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/icon-color.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/icon-img-down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/icon-img-up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ie-spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/image2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/image3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/image4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/image5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/img1_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/inbox-nav-arrow-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/instagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/item_img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/item_img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/jolicloud.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/last-fm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/linkedin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/logo-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/logo_azteca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/logo_conquer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/logo_metronic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/menu-toggler.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/overlay-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/photo1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/photo2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/photo3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/photo4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/photo5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/photo6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/picasa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/pintrest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-collapse-icon-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-collapse-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-config-icon-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-config-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-expand-icon-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-expand-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-reload-icon-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-reload-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-remove-icon-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/portlet-remove-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_06.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_07.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_08.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_09.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/preview_17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/profile-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/profile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/progressbar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/remove-icon-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/rss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/search-icon-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/search-icon-brown.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/search-icon-purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/search-icon-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/search-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/select2-spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/select2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/select2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-menu-arrow-green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-menu-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-search-close-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-search-close-brown.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-search-close-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-search-close-purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-search-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-toggler-blue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-toggler-brown.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-toggler-light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-toggler-purple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sidebar-toggler.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/skype.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/social_facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/social_googleplus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/social_linkedin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/social_rss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/social_twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/spotify.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/spritemap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/spritemap@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/stumbleupon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/switch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/syncfusion-icons-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/syncfusion-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/tumblr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_flat_10_000000_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-icons_228ef1_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-icons_ffd27a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/vimeo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/vk.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/walmart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/wordpress.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/xing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/yahoo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/image/youtube.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/DT_bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/additional-methods.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-colorpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-modalmanager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-rtl.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-tag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap-wysihtml5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/breakpoints.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/breakpoints.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/canvas-to-blob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/charts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/chosen.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ckeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/clockface.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/coming-soon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/contact-us.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/daterangepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/dropzone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/form-components.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/form-fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/form-samples.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/form-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/form-wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/gmaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/inbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery-1.10.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery-migrate-1.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery-ui-1.10.1.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.backstretch.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.blockui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.bootpag.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.bootstrap.wizard.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.cookie.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.countdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.easy-pie-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.fancybox.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.fileupload-fp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.flot.crosshair.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.flot.stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.gritter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.iframe-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.input-ip-address-control-1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.inputmask.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.knob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.multi-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.nestable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.pulsate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.slimscroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.tagsinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.toggle.buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.uniform.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.europe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.germany.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.russia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.sampledata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.usa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.vmap.world.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/jquery.xdr-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/load-image.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/lock.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/login-soft.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/maps-google.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/maps-vector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/portlet-draggable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/respond.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/select2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/table-advanced.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/table-editable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/table-managed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/tmpl.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ui-general.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ui-jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ui-modals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ui-nestable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ui-sliders.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/ui-tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/media/js/wysihtml5-0.3.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_blog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_blog_item.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_coming_soon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_news.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_news_item.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/page_timeline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/portlet_draggable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/portlet_general.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/table_advanced.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/table_basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/table_editable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/table_managed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/table_responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_general.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_modals.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_nestable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_sliders.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_tabs_accordions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_tiles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admindemo/ui_typography.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elementDemo1.html" afterPath="$PROJECT_DIR$/elementDemo1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/my-vue.js" afterPath="$PROJECT_DIR$/js/my-vue.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -471,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="elementDemo1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="elementDemo1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/elementDemo1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="557">
+              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="28" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -494,19 +40,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-vue.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my-vue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/my-vue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+            <state relative-caret-position="251">
+              <caret line="40" column="113" lean-forward="true" selection-start-line="40" selection-start-column="113" selection-end-line="40" selection-end-column="113" />
               <folding>
-                <marker date="1519541698587" expanded="true" signature="1728:1743" ph="..." />
-                <marker date="1519541698587" expanded="true" signature="1843:1858" ph="..." />
-                <marker date="1519541698587" expanded="true" signature="1932:1947" ph="..." />
-                <marker date="1519541698587" expanded="true" signature="2260:2275" ph="..." />
-                <marker date="1519541698587" expanded="true" signature="2576:2591" ph="..." />
-                <marker date="1519541698587" expanded="true" signature="2904:2919" ph="..." />
+                <marker date="1519548637413" expanded="true" signature="2586:2601" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="48" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -548,6 +109,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -573,7 +135,6 @@
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/upload.html" />
-        <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/edit.html" />
         <option value="$PROJECT_DIR$/view.html" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -585,6 +146,7 @@
         <option value="$PROJECT_DIR$/componentTest.html" />
         <option value="$PROJECT_DIR$/edit1.html" />
         <option value="$PROJECT_DIR$/elementDemo1.html" />
+        <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/js/my-vue.js" />
       </list>
     </option>
@@ -626,20 +188,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="myBlogWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myBlogWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myBlogWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1079,7 +627,7 @@
       <workItem from="1517316928732" duration="2682000" />
       <workItem from="1517400501661" duration="29000" />
       <workItem from="1517619626085" duration="15941000" />
-      <workItem from="1519182214398" duration="9028000" />
+      <workItem from="1519182214398" duration="12524000" />
     </task>
     <task id="LOCAL-00001" summary="初始导入">
       <created>1516286984334</created>
@@ -1099,10 +647,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83024000" />
+    <option name="totallyTimeSpent" value="86520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1117,10 +665,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13123645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031453364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19029851" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12260128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1177,7 +725,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="初始导入" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/my-vue.js</url>
+          <line>42</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1185,13 +742,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/wangEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96514">
-          <caret line="4387" column="9" lean-forward="true" selection-start-line="4387" selection-start-column="9" selection-end-line="4387" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/wangEditor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -1401,14 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88">
@@ -1436,14 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1546,26 +1080,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elementDemo1.html">
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="198">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="48" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/my-vue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+        <state relative-caret-position="251">
+          <caret line="40" column="113" lean-forward="true" selection-start-line="40" selection-start-column="113" selection-end-line="40" selection-end-column="113" />
           <folding>
-            <marker date="1519541698587" expanded="true" signature="1728:1743" ph="..." />
-            <marker date="1519541698587" expanded="true" signature="1843:1858" ph="..." />
-            <marker date="1519541698587" expanded="true" signature="1932:1947" ph="..." />
-            <marker date="1519541698587" expanded="true" signature="2260:2275" ph="..." />
-            <marker date="1519541698587" expanded="true" signature="2576:2591" ph="..." />
-            <marker date="1519541698587" expanded="true" signature="2904:2919" ph="..." />
+            <marker date="1519548637413" expanded="true" signature="2586:2601" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elementDemo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="28" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

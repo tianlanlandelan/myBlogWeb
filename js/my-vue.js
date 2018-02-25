@@ -31,40 +31,31 @@ Vue.component('my-test',{
     }
 });
 
+/**
+ * 左侧导航组件
+ * 引用方式:<my-left-menu :left-menu-value="leftMenuValue"></my-left-menu>
+ * 参数说明:    leftMenuValue:导航数据源,格式如：[{"name":"内容管理","value":"0","index":0,"children":[{"name":"文章管理","value":"1","url":"http://www.baidu.com"},
+     {"name":"评论管理","value":"2","url":"http://www.baidu.com" },{"name":"分类管理","value":"3","url":"http://www.baidu.com"},{"name":"标签管理","value":"4","url":"http://www.baidu.com" }]},
+    {"name":"用户管理","value":"10","index":0,"children":[{"name":"用户列表","value":"11","url":"http://www.baidu.com"}]},
+    {"name":"数据统计","value":"20","index":0,"children":[{"name":"访问量","value":"21","url":"http://www.baidu.com" }]},
+    {"name":"设置","value":"30","index":0,"children":[{"name":"博客设置","value":"31","url":"http://www.baidu.com"}]}];
+ */
 Vue.component('my-left-menu',{
-   props:[],
-    template:'<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">'+
-           '<el-submenu index="1" >    '+
-           '<template slot="title">   '+
-           '<i class="el-icon-location"></i>  '+
-           '<span>内容管理 </span>    '+
-           '</template>   '+
-               '<el-menu-item style="min-width: 50px" index="1-1" @click="handleClick(1,9)">文章管理</el-menu-item> '+
-               '<el-menu-item style="min-width: 50px" index="1-2">评论管理</el-menu-item> '+
-               '<el-menu-item style="min-width: 50px" index="1-3">分类/标签管理</el-menu-item>  '+
-           '</el-submenu> '+
-           '<el-submenu index="2">    '+
-           '<template slot="title">   '+
-           '<i class="el-icon-menu"></i>  '+
-           '<span slot="title">用户管理 </span>   '+
-           '</template>   '+
-                '<el-menu-item style="min-width: 50px" index="2-1">用户列表</el-menu-item> '+
-           '</el-submenu> '+
-           '<el-submenu index="3">    '+
-           '<template slot="title">   '+
-           '<i class="el-icon-document"></i>  '+
-           '<span>数据统计 </span>    '+
-           '</template>   '+
-                '<el-menu-item style="min-width: 50px" index="3-1">访问量</el-menu-item>  '+
-           '</el-submenu> '+
-           '<el-submenu index="4">    '+
-           '<template slot="title">   '+
-           '<i class="el-icon-setting"></i>   '+
-           '<span slot="title">设 置 </span>    '+
-           '</template>   '+
-                '<el-menu-item style="min-width: 50px" index="4-1">博客设置</el-menu-item> '+
-           '</el-submenu> '+
-           '</el-menu>'  ,
+   props:['leftMenuValue'],
+    template:'<el-menu  class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" >'+
+    '<el-submenu v-for="fatherMenu in menuDatabase" :key="fatherMenu.name" v-bind:index="fatherMenu.value" >    '+
+    '<template slot="title">   '+
+    '<i class="el-icon-location"></i>  '+
+    '<span>{{fatherMenu.name}} </span>    '+
+    '</template>   '+
+    '<el-menu-item v-for="menu in fatherMenu.children" :key="menu.name" style="min-width: 50px" v-bind:index="menu.value" @click="handleClick(menu.value,menu.name,menu.url)">{{menu.name}}</el-menu-item> '+
+    '</el-submenu> '+
+    '</el-menu>'  ,
+    data: function () {
+        return {
+            menuDatabase: this.leftMenuValue
+        }
+    },
     methods:{
         handleOpen:function(key, keyPath) {
             console.log("handleOpen--",key, keyPath);
@@ -72,8 +63,8 @@ Vue.component('my-left-menu',{
         handleClose:function(key, keyPath) {
             console.log("handleClose--",key, keyPath);
         },
-        handleClick:function(key, keyPath) {
-            console.log("handleClick--",key, keyPath);
+        handleClick:function(a,b,c) {
+            console.log("handleClick--",a,b,c);
         }
     }
 });

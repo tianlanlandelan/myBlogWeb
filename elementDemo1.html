@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <script src="js/vue.js"></script>
     <script src="js/my-vue.js"></script>
+    <script src="config.js"></script>
     <!-- 引入组件库 -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
@@ -15,7 +16,7 @@
     <div id = "app">
         <el-row :gutter="10">
             <el-col  :md="3" :offset="1">
-                <my-left-menu></my-left-menu>
+                <my-left-menu :left-menu-value="leftMenuValue"></my-left-menu>
             </el-col>
             <el-col  :md="16">
 
@@ -25,7 +26,10 @@
 
     <script>
         var app = new Vue({
-            el:"#app"
+            el:"#app",
+            data:{
+                leftMenuValue:leftMenuValue
+            }
         });
     </script>
 </body>
