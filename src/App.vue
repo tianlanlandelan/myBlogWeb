@@ -4,11 +4,19 @@
     <div>
       <el-button @click="startHacking">Start</el-button>
     </div>
+    <div>
+      <MyTopMenu></MyTopMenu>
+    </div>
   </div>
 </template>
 
 <script>
+import MyTopMenu from './pages/MyTopMenu.vue'
+
 export default {
+  components:{
+    MyTopMenu
+  },
   methods: {
     startHacking () {
       this.$notify({
