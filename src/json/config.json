@@ -1,0 +1,12 @@
+{
+    "myConfig" : {
+        "hostUrl":"http://127.0.0.1:8080"
+    },
+    "myRequestUrl" :{
+        "articleInfo":{
+            "getAll":"/articleInfo/getAll",
+            "insert":"/articleInfo/insert",
+            "getById":"/articleInfo/getById"
+        }
+    }
+}

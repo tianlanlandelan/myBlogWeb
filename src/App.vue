@@ -1,10 +1,9 @@
 <template>
   <div id="app">
 
-    <!-- <img src="./assets/logo.png">
     <div>
       <el-button @click="startHacking">Start</el-button>
-    </div> -->
+    </div>
     <el-row>
       <el-col :md="24">
         <MyTopMenu></MyTopMenu>
@@ -20,39 +19,15 @@
 </template>
 
 <script>
-var leftMenuValue = [
-    {"name":"内容管理","value":"0","index":0,"children":[
-        {"name":"文章管理","value":"1","url":"http://www.baidu.com"
-        },
-        {"name":"评论管理","value":"2","url":"http://www.baidu.com"
-        },
-        {"name":"分类管理","value":"3","url":"http://www.baidu.com"
-        },
-        {"name":"标签管理","value":"4","url":"http://www.baidu.com"
-        }
-    ]},
-    {"name":"用户管理","value":"10","index":0,"children":[
-        {"name":"用户列表","value":"11","url":"http://www.baidu.com"
-        }
-    ]},
-    {"name":"数据统计","value":"20","index":0,"children":[
-        {"name":"访问量","value":"21","url":"http://www.baidu.com"
-        }
-    ]},
-    {"name":"博客设置","value":"30","index":0,"children":[
-        {"name":"博客设置","value":"31","url":"http://www.baidu.com"
-        }
-    ]}
-    ];
-
-import MyTopMenu from './pages/MyTopMenu.vue'
-import MyLeftMenu from './pages/MyLeftMenu.vue'
+import jsonData from "./json/database.json"     //数据源
+import MyTopMenu from './pages/MyTopMenu.vue'   //顶部导航菜单
+import MyLeftMenu from './pages/MyLeftMenu.vue' //左侧功能菜单
 
 
 export default {
   data:function(){
     return{
-        leftMenuValue:leftMenuValue
+        leftMenuValue:jsonData.leftMenuValue
     }
   },
   components:{
