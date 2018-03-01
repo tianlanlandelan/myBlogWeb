@@ -13,6 +13,11 @@
       <el-col :md="3">
         <MyLeftMenu :left-menu-value="leftMenuValue"></MyLeftMenu>
       </el-col>
+      <el-col :md="10">
+        <router-link to="/a">Go to Foo</router-link>
+          <router-link to="/b">Go to Bar</router-link>
+        <router-view></router-view>
+      </el-col>
     </el-row>
 
   </div>

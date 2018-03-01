@@ -14,7 +14,7 @@
                             style="min-width: 50px" 
                             v-bind:index="menu.value" 
                             @click="handleClick(menu.value,menu.name,menu.url)">
-                {{menu.name}}
+                <router-link :to="menu.url">{{menu.name}}</router-link>
             </el-menu-item> 
         </el-submenu> 
     </el-menu>
