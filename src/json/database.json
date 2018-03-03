@@ -1,13 +1,13 @@
 {
     "leftMenuValue" :[
         {"name":"内容管理","value":"0","index":0,"children":[
-            {"name":"文章管理","value":"1","url":"/a"
+            {"name":"文章管理","value":"1","url":"/main/a"
             },
-            {"name":"评论管理","value":"2","url":"/b"
+            {"name":"评论管理","value":"2","url":"/main/b"
             },
-            {"name":"分类管理","value":"3","url":"/b"
+            {"name":"分类管理","value":"3","url":"/main/a"
             },
-            {"name":"标签管理","value":"4","url":"/b"
+            {"name":"标签管理","value":"4","url":"/main/b"
             }
         ]},
         {"name":"用户管理","value":"10","index":0,"children":[
