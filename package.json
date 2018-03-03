@@ -10,7 +10,8 @@
   "dependencies": {
     "element": "^0.1.4",
     "element-ui": "^2.0.0",
-    "vue": "^2.5.2"
+    "vue": "^2.5.2",
+    "wangeditor": "^3.0.16"
   },
   "engines": {
     "node": ">=6"

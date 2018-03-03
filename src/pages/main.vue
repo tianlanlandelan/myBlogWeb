@@ -1,20 +1,16 @@
 <template>
 <div>
-    <div>
-      <el-button @click="startHacking">Start</el-button>
-    </div>
-    <el-row>
+    <el-row >
       <el-col :md="24">
         <MyTopMenu></MyTopMenu>
       </el-col>
     </el-row>
-    <el-row>
+    <el-row :gutter="20">
       <el-col :md="3">
         <MyLeftMenu :left-menu-value="leftMenuValue"></MyLeftMenu>
       </el-col>
-      <el-col :md="10">
-        <router-link to="/a">Go to Foo</router-link>
-          <router-link to="/b">Go to Bar</router-link>
+      <el-col :md="20">
+        <br>
         <router-view></router-view>
       </el-col>
     </el-row>
@@ -38,14 +34,7 @@ export default {
     MyLeftMenu
   },
   methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It works!',
-        type: 'success',
-        message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
-        duration: 5000
-      })
-    }
+  
   }
 }
 </script>

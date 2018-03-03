@@ -1,7 +1,7 @@
 {
     "leftMenuValue" :[
         {"name":"内容管理","value":"0","index":0,"children":[
-            {"name":"文章管理","value":"1","url":"/main/a"
+            {"name":"文章管理","value":"1","url":"/home/ArticleEdit"
             },
             {"name":"评论管理","value":"2","url":"/main/b"
             },
