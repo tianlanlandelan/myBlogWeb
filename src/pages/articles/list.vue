@@ -12,7 +12,7 @@
                 <template slot-scope="scope">
                     <el-popover trigger="hover" placement="bottom">
                     <el-button type="success" round size="mini" @click="showInfo(scope.row.id)">查看</el-button>
-                    <el-button type="warning" round size="mini"><router-link style="color:#000;text-decoration: none;" to="/home/ArticleEdit">修改</router-link></el-button>
+                    <el-button type="warning" round size="mini" @click="editInfo(scope.row.id)">修改</el-button>
                     <el-button type="danger"  round size="mini"><router-link style="color:#000;text-decoration: none;" to="/home/ArticleEdit">删除</router-link></el-button>
                     <div slot="reference" class="name-wrapper">
                         <el-tag size="medium">操作:{{ scope.row.id}}</el-tag>
@@ -44,6 +44,10 @@ export default{
         showInfo(id){
             console.log("showInfo",id);
             this.$router.push("/home/ArticleView/" + id);
+        },
+        editInfo(id){
+            console.log("editInfo",id);
+            this.$router.push("/home/ArticleEdit/" + id);
         }   
     },
     mounted:function(){ /*加载文章列表*/

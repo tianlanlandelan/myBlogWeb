@@ -20,7 +20,7 @@ var routes = [
   { path:"/b",component:testB},
   { path:"/home",component:mainVue,
       children:[
-        { path:"ArticleEdit",component:ArticleEdit},
+        { path:"ArticleEdit/:id",component:ArticleEdit},
         { path:"ArticleList",component:ArticleList},
         { path:"ArticleView/:id",component:ArticleView}
       ]

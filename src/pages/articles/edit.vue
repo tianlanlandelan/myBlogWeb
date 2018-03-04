@@ -3,7 +3,7 @@
             <!--文章标题-->
             <el-row>
                 <el-col :md="24">
-                    <el-input type="text" id = "articleTitle" class="form-control" placeholder="标题：我们也曾年轻过" />
+                    <el-input type="text" id = "articleTitle" class="form-control" placeholder="标题：我们也曾年轻过" :value="articleInfo.title"/>
                 </el-col>
             </el-row><!--文章标题-->
             <br>
@@ -78,6 +78,8 @@
 <script>
 import MyAutoComp from "../utils/MyAutoComp.vue"
 import E from 'wangeditor'
+import axios from "axios"
+import config from "../../json/config.json"
 
     
 
@@ -100,7 +102,11 @@ export default{
             //编辑器
             editor : new E("#editor1","#editor2"),
             //图片上传成功后服务器返回的图片路径
-            imgUrl:null
+            imgUrl:null,
+            //获取文章详情的url
+            getInfoUrl:config.myConfig.hostUrl + config.myRequestUrl.articleInfo.getById,
+            //文章详情
+            articleInfo:null
         }
     },
     components:{
@@ -128,7 +134,21 @@ export default{
     mounted() {
         //初始化编辑器
         this.editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
-        this.editor.create()
+        this.editor.create();
+        //加载文章信息
+        let _this = this;
+        console.log("id:",this.$route.params.id);
+        axios.get(this.getInfoUrl
+            ,{
+                params:{"id":this.$route.params.id}
+            })
+            .then(function (response){
+               console.log( response.data.data[0]);
+               _this.articleInfo = response.data.data[0];
+            })
+            .catch(function (error){
+                console.log(error);
+            });
       }
 }
 </script>
