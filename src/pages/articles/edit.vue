@@ -3,7 +3,7 @@
             <!--文章标题-->
             <el-row>
                 <el-col :md="24">
-                    <el-input type="text" id = "articleTitle" class="form-control" placeholder="标题：我们也曾年轻过" :value="articleInfo.title"/>
+                    <el-input type="text" id = "articleTitle" class="form-control" placeholder="标题：我们也曾年轻过" v-model="articleInfo.title"/>
                 </el-col>
             </el-row><!--文章标题-->
             <br>
@@ -11,13 +11,15 @@
                 <el-col :md="16">
                     <el-row :gutter="10">
                         <el-col :md="4">
-                            <el-select id = "articleType" placeholder="请选择文章分类">
-                                <el-option label="前端开发" value="1"></el-option>
-                                <el-option label="网站设计" value="2"></el-option>
-                                <el-option label="后端开发" value="3"></el-option>
-                                <el-option label="数据库开发" value="4"></el-option>
-                                <el-option label="服务器维护" value="5"></el-option>
+                            <el-select v-model="articleInfo.typeName" style="z-index:100;" placeholder="请选择文章分类">
+                                <el-option
+                                v-for="item in options"
+                                :key="item.value"
+                                :label="item.label"
+                                :value="item.value">
+                                </el-option>
                             </el-select>
+                            
                         </el-col>
                         <el-col :md="20">
                             <MyAutoComp :data-list="autoCompDataBase" :data-string="autoCompShowString" :data-return.sync="autoCompResult"></MyAutoComp>
@@ -27,7 +29,7 @@
                     <el-row>
                         <el-col :md="24">
                             <el-input type="textarea" :rows="2" 
-                                placeholder="文章概要:可选，当不填写时，默认取文章内容前120字作为概要" >
+                                placeholder="文章概要:可选，当不填写时，默认取文章内容前120字作为概要" v-model="articleInfo.outline">
                             </el-input>
                         </el-col>
                     </el-row>
@@ -86,6 +88,22 @@ import config from "../../json/config.json"
 export default{
     data:function(){
         return{
+            options: [{
+                value: '1',
+                label: '前端开发'
+                }, {
+                value: '2',
+                label: '网站设计'
+                }, {
+                value: '3',
+                label: '后端开发'
+                }, {
+                value: '4',
+                label: '数据库开发'
+                }, {
+                value: '5',
+                label: '服务器维护'
+                }],
             //自动完成控件数据源
            autoCompDataBase:["ok",
                 "Oracle",
@@ -106,7 +124,7 @@ export default{
             //获取文章详情的url
             getInfoUrl:config.myConfig.hostUrl + config.myRequestUrl.articleInfo.getById,
             //文章详情
-            articleInfo:null
+            articleInfo:{}
         }
     },
     components:{
