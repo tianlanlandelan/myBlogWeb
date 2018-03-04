@@ -161,25 +161,25 @@
         },
         methods:{
             insert:function(){
-//                axios({
-//                    method:"post",
-//                    url:myRequestUrl.articleInfo.insert,
-//                    data:{
-//                        title:$("#articleTitle").val(),
-//                        content:editor.txt.html(),
-//                        outline:$("#articleOutline").val(),
-//                        txtContent:editor.txt.text(),
-//                        typeId:$("#articleType").val(),
-//                        tagNames:$("#autoCompInput").val(),
-//                        imgUrl:aritcleImg
-//                    }
-//                })
-//                    .then(function(response){
-//                        console.log(response)
-//                    })
-//                    .catch(function(error){
-//                        console.log(error);
-//                    });
+               axios({
+                   method:"post",
+                   url:myRequestUrl.articleInfo.insert,
+                   data:{
+                       title:$("#articleTitle").val(),
+                       content:editor.txt.html(),
+                       outline:$("#articleOutline").val(),
+                       txtContent:editor.txt.text(),
+                       typeId:$("#articleType").val(),
+                       tagNames:$("#autoCompInput").val(),
+                       imgUrl:aritcleImg
+                   }
+               })
+                   .then(function(response){
+                       console.log(response)
+                   })
+                   .catch(function(error){
+                       console.log(error);
+                   });
             }
         }
     });

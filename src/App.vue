@@ -23,9 +23,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Helvetica, sans-serif;
-  text-align: center;
 }
 </style>

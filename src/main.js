@@ -3,12 +3,13 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import './lib/js/wangEditor'
 
 import testA from './pages/child/a.vue'
 import testB from './pages/child/b.vue'
 import mainVue from "./pages/main.vue"
 import ArticleEdit from './pages/articles/edit.vue'
+import ArticleList from './pages/articles/list.vue'
+import ArticleView from './pages/articles/view.vue'
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);
@@ -20,7 +21,8 @@ var routes = [
   { path:"/home",component:mainVue,
       children:[
         { path:"ArticleEdit",component:ArticleEdit},
-        { path:"b",component:testB}
+        { path:"ArticleList",component:ArticleList},
+        { path:"ArticleView/:id",component:ArticleView}
       ]
   }
   

@@ -20,7 +20,7 @@
                             </el-select>
                         </el-col>
                         <el-col :md="20">
-                            <MyAutoComp :data-list="list" :data-string="string" :data-return.sync="foo"></MyAutoComp>
+                            <MyAutoComp :data-list="autoCompDataBase" :data-string="autoCompShowString" :data-return.sync="autoCompResult"></MyAutoComp>
                         </el-col>
                     </el-row>
                     <br>
@@ -55,19 +55,17 @@
 
             <el-row><!--富文本编辑区-->
                 <el-col :md="24">
-                    <!--编辑器控制条-->
-                    <div class="row form-group wangEditor1" id = "editor1"></div>
-                    <!--内容编辑区-->
-                    <div class="row form-group wangEditor" id = "editor2"></div>
+                    <div style="border: 1px solid #ccc;"  id = "editor1"></div>
+                    <div style="min-height:400px;border-left: 1px  solid #ccc;border-right: 1px  solid #ccc;border-bottom: 1px  solid #ccc;"  id = "editor2"></div>
                 </el-col>
             </el-row><!--富文本编辑区-->
-
+            <br>
             <el-row><!--操作按钮-->
                 <el-col :md="8">
                     <el-button type="primary" round>保存</el-button>
                 </el-col>
                 <el-col :md="8">
-                    <el-button id = "insertArticle" @click="insert()" type="success" round>发布</el-button>
+                    <el-button id = "insertArticle" @click="insert" type="success" round>发布</el-button>
                 </el-col>
                 <el-col :md="8">
                     <el-button type="info" round>定时发布</el-button>
@@ -86,7 +84,8 @@ import E from 'wangeditor'
 export default{
     data:function(){
         return{
-           list:["ok",
+            //自动完成控件数据源
+           autoCompDataBase:["ok",
                 "Oracle",
                 "Oracle 11g",
                 "Oracle or Mysql",
@@ -94,31 +93,42 @@ export default{
                 "oh",
                 "Or",
                 "Open"],
-            foo:"a",
-            string:null 
+            //自动完成控件返回结果
+            autoCompResult:null,
+            //自动完成控件回显值
+            autoCompShowString:null ,
+            //编辑器
+            editor : new E("#editor1","#editor2"),
+            //图片上传成功后服务器返回的图片路径
+            imgUrl:null
         }
     },
     components:{
         MyAutoComp
     },
     methods: {
+      //上传图片
       submitUpload() {
         this.$refs.upload.submit();
-        console.log("aaaaa");
       },
+      //移除选中的图片
       handleRemove(file, fileList) {
         console.log(file, fileList);
       },
+      //图片上传成功的回调
       imgUploadSuccess(response){
-        console.log("imgUploadSuccess",response);
+        console.log("imgUploadSuccess",response.data[0]);
+        imgUrl = response.data[0];
+      },
+      //发布文章
+      insert(){
+          console.log(this.editor.txt.text());
       }
     },
     mounted() {
-        var editor = new E("#editor1","#editor2");
-        editor.customConfig.onchange = (html) => {
-          this.editorContent = html
-        }
-        editor.create()
+        //初始化编辑器
+        this.editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        this.editor.create()
       }
 }
 </script>
