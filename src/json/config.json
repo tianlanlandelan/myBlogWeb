@@ -6,7 +6,8 @@
         "articleInfo":{
             "getAll":"/articleInfo/getAll",
             "insert":"/articleInfo/insert",
-            "getById":"/articleInfo/getById"
+            "getById":"/articleInfo/getById",
+            "deleteById":"/articleInfo/deleteById"
         }
     }
 }

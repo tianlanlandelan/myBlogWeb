@@ -13,7 +13,7 @@
                     <el-popover trigger="hover" placement="bottom">
                     <el-button type="success" round size="mini" @click="showInfo(scope.row.id)">查看</el-button>
                     <el-button type="warning" round size="mini" @click="editInfo(scope.row.id)">修改</el-button>
-                    <el-button type="danger"  round size="mini"><router-link style="color:#000;text-decoration: none;" to="/home/ArticleEdit">删除</router-link></el-button>
+                    <el-button type="danger"  round size="mini" @click="deleteInfo(scope.row.id)">删除</el-button>
                     <div slot="reference" class="name-wrapper">
                         <el-tag size="medium">操作:{{ scope.row.id}}</el-tag>
                     </div>
@@ -34,6 +34,7 @@ export default{
     data:function(){
         return{
             getListUrl:config.myConfig.hostUrl + config.myRequestUrl.articleInfo.getAll,
+            deleteById:config.myConfig.hostUrl + config.myRequestUrl.articleInfo.deleteById,
             tableData: null
         }
     },
@@ -48,10 +49,43 @@ export default{
         editInfo(id){
             console.log("editInfo",id);
             this.$router.push("/home/ArticleEdit/" + id);
-        }   
-    },
-    mounted:function(){ /*加载文章列表*/
-        let _this = this;
+        },
+        deleteInfo(id){
+            let _this = this;
+            console.log("deleteInfo",id);
+            this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {
+                _this.deleteAritcleById(id);
+                this.$message({
+                    type: 'success',
+                    message: '删除成功!'
+                });
+            }).catch(() => {
+                this.$message({
+                    type: 'info',
+                    message: '已取消删除'
+                });          
+            });
+        },
+        deleteAritcleById(id){
+            console.log("deleteArticleById",id);
+            axios({
+                method:"delete",
+                url:this.deleteById,
+                params:{"id":id}
+            })
+            .then(function(response){
+                console.log(response.data.message);
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+        },
+        getArticleList(){
+            let _this = this;
             console.log("getArticleList:",this.getListUrl);
             axios.get(this.getListUrl
             ,{
@@ -62,6 +96,10 @@ export default{
             .catch(function (error){
                 console.log(error);
             });
+        }   
+    },
+    mounted:function(){ /*加载文章列表*/
+        this.getArticleList();
     }
 }
 </script>
