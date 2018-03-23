@@ -63,6 +63,7 @@ export default{
                     type: 'success',
                     message: '删除成功!'
                 });
+                _this.getArticleList();
             }).catch(() => {
                 this.$message({
                     type: 'info',

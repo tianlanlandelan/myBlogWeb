@@ -22,7 +22,7 @@
                             
                         </el-col>
                         <el-col :md="20">
-                            <MyAutoComp :data-list="autoCompDataBase" :data-string="autoCompShowString" :data-return.sync="autoCompResult"></MyAutoComp>
+                            <MyAutoComp v-model="autoCompData"></MyAutoComp>
                         </el-col>
                     </el-row>
                     <br>
@@ -87,7 +87,8 @@ import config from "../../json/config.json"
 
 export default{
     data:function(){
-        return{
+        return{//文章详情
+            articleInfo:{},
             options: [{
                 value: '1',
                 label: '前端开发'
@@ -105,26 +106,25 @@ export default{
                 label: '服务器维护'
                 }],
             //自动完成控件数据源
-           autoCompDataBase:["ok",
+            autoCompData:{
+                dataString:"null",
+                dataList:["ok",
                 "Oracle",
                 "Oracle 11g",
                 "Oracle or Mysql",
                 "origin",
                 "oh",
                 "Or",
-                "Open"],
-            //自动完成控件返回结果
-            autoCompResult:null,
-            //自动完成控件回显值
-            autoCompShowString:null ,
+                "Open"]
+            },
             //编辑器
             editor : new E("#editor1","#editor2"),
             //图片上传成功后服务器返回的图片路径
             imgUrl:null,
             //获取文章详情的url
             getInfoUrl:config.myConfig.hostUrl + config.myRequestUrl.articleInfo.getById,
-            //文章详情
-            articleInfo:{}
+            insertInfoUrl:config.myConfig.hostUrl + config.myRequestUrl.articleInfo.insert,
+            
         }
     },
     components:{
@@ -146,7 +146,27 @@ export default{
       },
       //发布文章
       insert(){
-          console.log(this.editor.txt.text());
+        //   console.log(this.editor.txt.text());
+        console.log(this.articleInfo.title);
+            axios({
+                method:"post",
+                url:this.insertInfoUrl,
+                data:{
+                            title:this.articleInfo.title,
+                            content:this.editor.txt.html(),
+                            outline:this.articleInfo.outline,
+                            txtContent:this.editor.txt.text(),
+                            typeId:this.articleInfo.typeId,
+                            tagNames:this.articleInfo.tagNames,
+                            imgUrl:this.articleInfo.imgUrl
+                        }
+            })
+            .then(function(response){
+                console.log(response.data.message);
+            })
+            .catch(function(error){
+                console.log(error);
+            })
       }
     },
     mounted() {
@@ -161,8 +181,12 @@ export default{
                 params:{"id":this.$route.params.id}
             })
             .then(function (response){
-               console.log( response.data.data[0]);
+               
                _this.articleInfo = response.data.data[0];
+               _this.editor.txt.html(_this.articleInfo.content);
+               _this.autoCompData.dataString = _this.articleInfo.tagNames;
+               console.log("000000000",_this.autoCompData.dataString);
+          
             })
             .catch(function (error){
                 console.log(error);

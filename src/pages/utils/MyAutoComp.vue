@@ -10,11 +10,11 @@
 </template>
 <script>
 export default {
-  props:['dataList',"dataString","dataReturn"],
+  props:['value'],
   data: function () {
         return {
-            dataStr: this.dataString,
-            dataBase:this.dataList,
+            dataStr: this.value.dataString,
+            dataBase:this.value.dataList,
             list:new Array(),
             myClass:{
                 display:"none"
@@ -23,7 +23,7 @@ export default {
     },
   methods:{
         keyup:function () {
-            this.$emit('update:dataReturn', this.dataStr);
+            console.log(this.dataStr);
             this.list = new Array();
             var str = this.dataStr.trim();
             if(str == "" || str.lastIndexOf(";")+1 == str.length) {
@@ -52,7 +52,6 @@ export default {
             }else{
                 this.dataStr = str + ";";
             }
-            this.$emit('update:dataReturn', this.dataStr);
             var index = this.list.indexOf(str);
             if(index > -1){
                 this.list.splice(index,1);
